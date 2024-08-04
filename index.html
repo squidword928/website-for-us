@@ -3,26 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Girlfriend's Website</title>
+    <title>Playbook</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Special Page</h1>
+        <nav>
+            <div class="logo">PLAYBOOK</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/daily-verse">Daily Verse</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/dates-to-remember">Dates to Remember</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="#" class="login">Log in</a>
+                <a href="#" class="early-access">Early access</a>
+            </div>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/daily-verse">Daily Verse</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/dates-to-remember">Dates to Remember</a></li>
-        </ul>
-    </nav>
+
     <main>
-        <h2>Home Page</h2>
-        <p>Welcome to our special page. Check back daily for new updates!</p>
+        <section class="hero">
+            <h1>Make your cloud storage beautiful.</h1>
+            <p>Intelligently organize, share, and collaborate on files and folders with your whole team.</p>
+            <div class="cta-buttons">
+                <a href="#" class="cta">Get early access</a>
+                <a href="#" class="join-community">Join our Community</a>
+            </div>
+        </section>
+
+        <section class="image-grid">
+            <!-- Repeat this block for each image in the grid -->
+            <div class="grid-item">
+                <img src="/images/image1.jpg" alt="Description">
+            </div>
+            <!-- Add more grid items here -->
+        </section>
     </main>
+
     <footer>
+        <div class="award">
+            <img src="/images/award.png" alt="Best Clean Design">
+        </div>
         <p>Made with ❤️ for you</p>
     </footer>
     <script src="/js/script.js"></script>
