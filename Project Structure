@@ -1,0 +1,10 @@
+my-girlfriend-website/
+├── public/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── script.js
+│   ├── images/
+│   │   └── (your images here)
+│   └── index.html
+└── server.js
