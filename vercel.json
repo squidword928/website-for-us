@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/daily-verse", "destination": "/daily-verse.html" },
+    { "source": "/gallery", "destination": "/gallery.html" },
+    { "source": "/dates-to-remember", "destination": "/dates-to-remember.html" },
+    { "source": "/", "destination": "/index.html" }
+  ]
+}
