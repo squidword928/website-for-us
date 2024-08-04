@@ -1,31 +1,36 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
 }
 
 header {
     background-color: #ff69b4;
     color: white;
-    text-align: center;
-    padding: 1em 0;
-    width: 100%;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: center;
-    background-color: #ffb6c1;
-    width: 100%;
     margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -36,40 +41,108 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;
-    display: inline-block;
 }
 
-nav ul li a:hover {
-    background-color: #ff69b4;
+nav .auth-buttons {
+    display: flex;
+}
+
+nav .auth-buttons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 5px 10px;
     border-radius: 5px;
 }
 
-main {
-    text-align: center;
-    margin-top: 20px;
-    flex-grow: 1;
+nav .auth-buttons .login {
+    background-color: #ffb6c1;
 }
 
+nav .auth-buttons .early-access {
+    background-color: #ff69b4;
+}
+
+nav .auth-buttons a:hover {
+    opacity: 0.8;
+}
+
+/* Main content */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero {
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.cta-buttons {
+    margin: 20px 0;
+}
+
+.cta-buttons a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.cta-buttons .cta {
+    background-color: #ff69b4;
+}
+
+.cta-buttons .join-community {
+    background-color: #ffb6c1;
+}
+
+.cta-buttons a:hover {
+    opacity: 0.8;
+}
+
+/* Image grid */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.grid-item {
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Footer */
 footer {
     background-color: #ffb6c1;
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
     width: 100%;
 }
 
-.gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.gallery img {
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+.award img {
+    max-width: 100px;
 }
